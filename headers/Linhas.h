@@ -2,13 +2,24 @@
 #define TP1_LINHAS_H
 #include <stdlib.h>
 
+typedef int TipoLinha;
 typedef struct{
-    int line;
-}Tlinha;
+    TipoLinha numero;
+}TItemLinha;
 
-void CriaLinha (Tlinha *linha);
-void Setlinha (Tlinha *linha, int* line);
-char* GetPalavra (Tlinha *linha);
-void ImprimePalavra(Tlinha linha);
+typedef struct CelulaLinha* ApontaLinha;
+typedef struct CelulaLinha{
+    TipoLinha line;
+    struct CelulaLinha* proxLinha;
+}TCelulaLinha;
+
+typedef struct{
+    ApontaLinha primL;
+    ApontaLinha ultL;
+}TListaLinha;
+
+void FLVaziaLinhas(TListaLinha* pListaLinha);
+int LIsereLinhas(TListaLinha* pListaLinha, TItemLinha *pItemLinha);
+void LImprimeLinhas(TListaLinha* pListaLinha);
 
 #endif //TP1_LINHAS_H
