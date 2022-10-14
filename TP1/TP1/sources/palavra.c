@@ -1,0 +1,2 @@
+#include "palavra.h"
+
