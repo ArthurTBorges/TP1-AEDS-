@@ -6,10 +6,13 @@ void CriaPalavra (Tpalavra *palavra){
 
 void Setpalavra (Tpalavra *palavra, char* string){
     strcpy(palavra->string, string);
+    string
 }
 
 char* GetPalavra (Tpalavra *palavra){
+
     return palavra->string;
+
 }
 
 void ImprimePalavra(Tpalavra palavra){
