@@ -1,6 +1,6 @@
 #include "palavra.h"
 
-void CriaPalavra (Tpalavra *palavra){
+void CriaPalavra (T *palavra){
     strcpy(palavra->string, "");
 }
 

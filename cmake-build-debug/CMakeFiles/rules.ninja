@@ -42,7 +42,7 @@ rule C_EXECUTABLE_LINKER__TP1_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"C:\Users\RAC INFORMATICA\Desktop\AEDS I\TP1" -B"C:\Users\RAC INFORMATICA\Desktop\AEDS I\TP1\cmake-build-debug"
+  command = "C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Pichau\Documents\TP1-AEDS- -BC:\Users\Pichau\Documents\TP1-AEDS-\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 
