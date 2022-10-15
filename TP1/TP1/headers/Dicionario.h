@@ -2,9 +2,8 @@
 #define TP1_DICIONARIO_H
 #include "ListaPalavras.h"
 
-typedef char TipoLetra;
 typedef struct{
-    TipoLetra caracter[1];
+    char caracter[1];
     TListaPalavra ListaDaLetra;
 }TItemLetra;
 
@@ -28,7 +27,7 @@ typedef struct{
 
 void CriaDicioVazio(TListaLetra* pLetra);
 int LEhDicioVazio(TListaLetra* pLetra);
-int VerificaLetra(TListaLetra* pLetra, TipoLetra letra);
+int VerificaLetra(TListaLetra* pLetra, char letra);
 void InsereLetra(TListaLetra* pLetra, TItemLetra letra);
 void ConstroiDicio(TListaLetra* pLetra);
 

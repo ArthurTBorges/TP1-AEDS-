@@ -2,7 +2,7 @@
 #include <string.h>
 #include "Linhas.h"
 
-typedef char TipoPalavra;
+typedef char char;
 typedef struct{
     char *string;
     ApontaLinha primL;
@@ -16,6 +16,6 @@ typedef struct{
 
 TItemPalavra* criaPalavraVazia();
 void preenchePalavra(TItemPalavra* palavra, char caracteres[50]);
-TipoPalavra retornaPalavra(TItemPalavra* palavra);
+char retornaPalavra(TItemPalavra* palavra);
 void imprimePalavra(TItemPalavra* palavra);
 void imprimePalavraAndLinhas(TItemPalavra* palavra);

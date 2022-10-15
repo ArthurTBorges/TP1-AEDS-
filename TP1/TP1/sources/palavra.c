@@ -5,11 +5,11 @@ TItemPalavra* criaPalavraVazia(){
     return pPalavra;
 }
 
-void preenchePalavra(TItemPalavra * palavra, TipoPalavra caracteres[50]){
+void preenchePalavra(TItemPalavra * palavra, char caracteres[50]){
     strcpy( palavra->string, caracteres);
 }
 
-TipoPalavra retornaPalavra(TItemPalavra* palavra){
+char retornaPalavra(TItemPalavra* palavra){
     return *palavra->string;
 }
 

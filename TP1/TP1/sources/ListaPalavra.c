@@ -35,7 +35,7 @@ int LRetiraPalavras(TListaPalavra* pListaPalavra){
 }
 
 //Retirar dada palavra:
-int LRetiraDadaP(TListaPalavra* pListaPalavra, TipoPalavra dadaPalavra){
+int LRetiraDadaP(TListaPalavra* pListaPalavra, char dadaPalavra){
     TCelulaPalavra* pAux, pAux2;
 
     if(LEhVaziaPalavras(pListaPalavra)){
@@ -65,7 +65,7 @@ int LEhVaziaPalavras(TListaPalavra* pListaPalavra){
 }
 
 //Verifica se a palavra já existe na lista:
-int VerificaPalavra(TListaPalavra* pListaPalavra, TipoPalavra dadaPalavra){
+int VerificaPalavra(TListaPalavra* pListaPalavra, char dadaPalavra){
     TCelulaPalavra* pAux;
 
     if(LEhVaziaPalavras(pListaPalavra)){

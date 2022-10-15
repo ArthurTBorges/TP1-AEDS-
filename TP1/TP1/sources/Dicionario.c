@@ -11,7 +11,7 @@ int LEhDicioVazio(TListaLetra* pLetra){
     return(pLetra->primLtr == pLetra->ultLtr);
 }
 
-int VerificaLetra(TListaLetra* pLetra, TipoLetra letraDada){
+int VerificaLetra(TListaLetra* pLetra, char letraDada){
     TCelulaLetra * pAux;
 
     if(LEhDicioVazio(pLetra)){

@@ -3,7 +3,7 @@
 #include "Linhas.h"
 #include "palavra.h"
 /*
-    typedef char TipoPalavra;
+    typedef char char;
     typedef struct{
         char string[50];
         //ApontaLinha primL;
@@ -32,9 +32,9 @@ typedef struct{
 void FLVaziaPalavras(TListaPalavra* pListaPalavra);
 void LIserePalavras(TListaPalavra* pListaPalavra, TItemPalavra *pItemPalavra);
 int LRetiraPalavras(TListaPalavra* pListaPalavra);
-int LRetiraDadaP(TListaPalavra* pListaPalavra, TipoPalavra dadaPalavra);
+int LRetiraDadaP(TListaPalavra* pListaPalavra, char dadaPalavra);
 int LEhVaziaPalavras(TListaPalavra* pListaPalavra);
-int VerificaPalavra(TListaPalavra* pListaPalavra, TipoPalavra dadaPalavra);
+int VerificaPalavra(TListaPalavra* pListaPalavra, char dadaPalavra);
 int RetornaContagem(TListaPalavra* pListaPalavra);
 void LImprimePalavrasAndLinhas(TListaPalavra* pListaPalavra, TListaLinha* pListaLinha);
 

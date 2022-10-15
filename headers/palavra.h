@@ -3,9 +3,9 @@
 #include "Linhas.h"
 #define contador 0
 
-typedef char TipoPalavra;
+typedef char char;
 typedef struct{
-    TipoPalavra string[50];
+    char string[50];
     TListaLinha ListaDaPalavra;
 }TItemPalavra;
 
@@ -22,8 +22,8 @@ typedef struct{
 
 //Funções do TAD palavra:
 void CriaPVazia(TCelulaPalavra* pPalavra);
-int SetPalavra(TCelulaPalavra* pPalavra, TipoPalavra *PalavraTxt);
-TipoPalavra GetPalavra(TCelulaPalavra* pPalavra);
+int SetPalavra(TCelulaPalavra* pPalavra, char *PalavraTxt);
+char GetPalavra(TCelulaPalavra* pPalavra);
 void ImprimePalavra(TCelulaPalavra* pPalavra, TCelulaLinha* pLinha);
 
 
@@ -32,7 +32,7 @@ void FLVaziaPalavras(TListaPalavra* pListaPalavra);
 int LEhVaziaPalavras(TListaPalavra* pListaPalavra);
 int LIserePalavras(TListaPalavra* pListaPalavra, TItemPalavra *pItemPalavra);
 int LRetiraPalavras(TListaPalavra* pListaPalavra, TItemPalavra *pItemPalavra);
-int LRetiraDada(TListaPalavra* pListaPalavra, TipoPalavra *stringRetira);
-int VerificaDada(TListaPalavra* pListaPalavra, TipoPalavra *stringVerifica);
+int LRetiraDada(TListaPalavra* pListaPalavra, char *stringRetira);
+int VerificaDada(TListaPalavra* pListaPalavra, char *stringVerifica);
 void LImprimePalavras(TListaPalavra* pListaPalavra, TListaLinha* pListaLinha);
 void LImprimeContador();

@@ -2,9 +2,9 @@
 #define TP1_DICIONARIO_H
 #include "palavra.h"
 
-typedef char TipoLetra;
+typedef char char;
 typedef struct{
-    TipoLetra letter;
+    char letter;
     TListaPalavra ListaDaLetra;
 }TItemLetra;
 

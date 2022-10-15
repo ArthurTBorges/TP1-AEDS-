@@ -3,9 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef int TipoLinha;
 typedef struct{
-    TipoLinha numero;
+    int numero;
 }TItemLinha;
 
 typedef struct CelulaLinha* ApontaLinha;
@@ -22,7 +21,7 @@ typedef struct{
 void FLVaziaLinhas(TListaLinha* pListaLinha);
 int LEhVaziaLinhas(TListaLinha* pListaLinha);
 void LIsereLinhas(TListaLinha* pListaLinha, TItemLinha *pItemLinha);
-int VerificaLinha(TListaLinha* pListaLinha, TipoLinha atualLinha);
+int VerificaLinha(TListaLinha* pListaLinha, int atualLinha);
 void LImprimeLinhas(TListaLinha* pListaLinha);
 
 #endif //TP1_LINHAS_H

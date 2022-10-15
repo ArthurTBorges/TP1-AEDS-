@@ -2,14 +2,13 @@
 #define TP1_LINHAS_H
 #include <stdlib.h>
 
-typedef int TipoLinha;
 typedef struct{
-    TipoLinha numero;
+    int numero;
 }TItemLinha;
 
 typedef struct CelulaLinha* ApontaLinha;
 typedef struct CelulaLinha{
-    TipoLinha line;
+    int line;
     struct CelulaLinha* proxLinha;
 }TCelulaLinha;
 
