@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 C:/Users/Pichau/Documents/TP1-AEDS-/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Pichau/Documents/TP1-AEDS-/cmake-build-debug/CMakeFiles/TP1.dir
 C:/Users/Pichau/Documents/TP1-AEDS-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+/Users/saulovictor/Desktop/UFV/2022-02/AEDS-1/TP1-AEDS-/cmake-build-debug/CMakeFiles/TP1.dir
+/Users/saulovictor/Desktop/UFV/2022-02/AEDS-1/TP1-AEDS-/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/saulovictor/Desktop/UFV/2022-02/AEDS-1/TP1-AEDS-/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> 49fdb50f9f31225f78d777764e49d630600d80db

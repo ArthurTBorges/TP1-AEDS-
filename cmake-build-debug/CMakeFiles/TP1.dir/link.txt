@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/TP1.dir/sources/palavra.o CMakeFiles/TP1.dir/sources/Dicionario.o CMakeFiles/TP1.dir/sources/Linhas.o CMakeFiles/TP1.dir/main.o -o TP1 
