@@ -5,8 +5,8 @@ include_directories(sources)
 
 add_executable(TP1
         headers/Dicionario.h
-        sources/palavra.c
         sources/Dicionario.c
+        sources/palavra.c
         headers/palavra.h
         headers/Linhas.h
         sources/Linhas.c
