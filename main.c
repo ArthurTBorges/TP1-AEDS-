@@ -4,20 +4,20 @@
 
 int main(){
 
-    TListaLetra *pLetra = NULL;
-    TListaPalavra *pPalavra = NULL;
+    TListaLetra pLetra;
+    TListaPalavra* pPalavra = NULL;
 
     int menu = 0;
     while(menu != -1){
         printf("QUAL OPCAO ESCOLHER:\n");
-        printf("1)CRIAR DICIONARIO \n2)IMPRIMIR DICIONARIO");
+        printf("1)CRIAR DICIONARIO \n2)IMPRIMIR DICIONARIO\n");
         scanf("%d", &menu);
 
-        switch (menu) {
+        switch (menu){
             case 1:
-                ConstroiDicio(pLetra, pPalavra);
+                ConstroiDicio(&pLetra, pPalavra);
             case 2:
-                ImprimeDicio(pLetra);
+                ImprimeDicio(&pLetra);
             default:
                 printf("");
         }

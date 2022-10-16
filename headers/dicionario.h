@@ -30,7 +30,7 @@ typedef struct{
 // [] - Remove Uma Letra No Dicionario.
 // [] -
 
-TListaLetra* CriaDicioVazio(TListaLetra* pLetra);
+void CriaDicioVazio(TListaLetra* pLetra);
 int LEhDicioVazio(TListaLetra* pLetra);
 int VerificaLetra(TListaLetra* pLetra, char letra);
 void InsereLetra(TListaLetra* pLetra, char caractere);
