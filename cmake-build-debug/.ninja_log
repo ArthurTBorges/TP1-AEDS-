@@ -1,0 +1,16 @@
+# ninja log v5
+16	132	6876491321372989	CMakeFiles/tp1.dir/palavra.c.obj	fe7408905eec9532
+12	131	6876491321362993	CMakeFiles/tp1.dir/listaPalavra.c.obj	7b9239ed21070516
+4	129	6876491321343055	CMakeFiles/tp1.dir/main.c.obj	e13560272242992d
+8	136	6876491321432806	CMakeFiles/tp1.dir/dicionario.c.obj	fb21b8dcf346e758
+0	131	6876491321343055	CMakeFiles/tp1.dir/linhas.c.obj	942c853b76d9ae26
+148	284	6876491322889552	tp1.exe	8eaa1519b0fbee1f
+1	147	6876492462617080	build.ninja	6c4efe2e1d019479
+7	100	6876492464073211	CMakeFiles/tp1.dir/sources/linhas.c.obj	f925a36a42003cff
+4	102	6876492464083173	CMakeFiles/tp1.dir/main.c.obj	e13560272242992d
+9	110	6876492464202844	CMakeFiles/tp1.dir/sources/palavra.c.obj	54548ff44df320eb
+2	117	6876492464272656	CMakeFiles/tp1.dir/sources/listaPalavra.c.obj	eb6ddf5a02111e08
+12	134	6876492464462144	CMakeFiles/tp1.dir/sources/dicionario.c.obj	dbf0afa2d2e6a06f
+140	335	6876492466352187	tp1.exe	c43a0df7b7681ae5
+2	71	6876492604953876	CMakeFiles/tp1.dir/main.c.obj	e13560272242992d
+72	166	6876492605851479	tp1.exe	c43a0df7b7681ae5
