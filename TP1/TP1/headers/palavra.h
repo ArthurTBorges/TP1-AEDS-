@@ -2,9 +2,9 @@
 #include <string.h>
 #include "Linhas.h"
 
-typedef char char;
+
 typedef struct{
-    char *string;
+    char *string[50];
     ApontaLinha primL;
 }TItemPalavra;
 

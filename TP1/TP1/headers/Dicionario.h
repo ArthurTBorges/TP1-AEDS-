@@ -3,7 +3,7 @@
 #include "ListaPalavras.h"
 
 typedef struct{
-    char caracter[1];
+    char caracter;
     TListaPalavra ListaDaLetra;
 }TItemLetra;
 
@@ -25,11 +25,12 @@ typedef struct{
 // [] - Remove Uma Letra No Dicionario.
 // [] -
 
-void CriaDicioVazio(TListaLetra* pLetra);
+TListaLetra* CriaDicioVazio(TListaLetra* pLetra);
 int LEhDicioVazio(TListaLetra* pLetra);
 int VerificaLetra(TListaLetra* pLetra, char letra);
-void InsereLetra(TListaLetra* pLetra, TItemLetra letra);
-void ConstroiDicio(TListaLetra* pLetra);
-
+void InsereLetra(TListaLetra* pLetra, char caractere, int contlinha);
+void ConstroiDicio(TListaLetra* pLetra, TListaPalavra* pListaPalavra);
+void ImprimeDicio(TListaLetra* pLetra);
+void ImprimeDadaLetra(TListaLetra* pLista, char dadaLetra);
 
 #endif //TP1_DICIONARIO_H
