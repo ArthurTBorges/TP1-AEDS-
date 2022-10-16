@@ -8,14 +8,14 @@ int main(){
     int menu = 0;
     while(menu != -1){
         printf("QUAL OPCAO ESCOLHER:");
-        printf("1)CRIAR DICIONARIO \n2)RETIRAR DADA PALAVRA \n3)IMPRIMIR DICIONARIO \n4)IMPRIMIR DADA LETRA");
+        printf("1)CRIAR DICIONARIO \n3)IMPRIMIR DICIONARIO");
         scanf("%d", &menu);
 
         switch (menu) {
             case 1:
                 ConstroiDicio(pLetra, pPalavra);
             case 2:
-                printf("");
+                ImprimeDicio(pLetra);
             default:
                 printf("");
         }

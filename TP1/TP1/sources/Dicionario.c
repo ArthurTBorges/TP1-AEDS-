@@ -30,7 +30,7 @@ int VerificaLetra(TListaLetra* pLetra, char caractere){
     return 1;
 }
 
-void InsereLetra(TListaLetra* pLetra, char caractere, int contlinha){
+void InsereLetra(TListaLetra* pLetra, char caractere){
     pLetra->primLtr->proxLetra = (struct CelulaLetra *) (ApontaPalavra) malloc(sizeof(TCelulaPalavra));
     pLetra->ultLtr = pLetra->ultLtr->proxLetra;
     pLetra->ultLtr->letter.caracter = caractere; //possivel erro;
@@ -42,13 +42,18 @@ void ConstroiDicio(TListaLetra* pLetra, TListaPalavra* pListaPalavra){
     //Bota o seu arquivo:
     const char* filename = "arquivo.txt";
     char *pt;
-    int contLinha = 1;
+    TItemLinha contLinha;
+    contLinha.numero = 1;
 
     FILE *in_file = fopen(filename, "r");
     struct stat sb;
     stat(filename, &sb);
 
-    struct CelulaLetra *primLtr;
+    TListaLetra *primLtr;
+    TItemPalavra *itemPalavra;
+    TListaLinha* pListaLinha;
+
+
     primLtr = CriaDicioVazio(pLetra);
 
     char *file_contents = malloc(sb.st_size);
@@ -56,18 +61,37 @@ void ConstroiDicio(TListaLetra* pLetra, TListaPalavra* pListaPalavra){
         pt = strtok(file_contents, " ");
         while(pt){
             if(VerificaLetra(pLetra, pt[0]) == 1){
-                InsereLetra(pLetra, pt[0], contLinha);
+                TListaPalavra *pListaPalavra;
+                InsereLetra(pLetra, pt[0]);
+                itemPalavra = criaPalavraVazia();
+                preenchePalavra(itemPalavra, pt);
 
-                FLVaziaPalavras();
-                if(){
+                FLVaziaPalavras(pListaPalavra);
+                LIserePalavras(pListaPalavra, itemPalavra);
 
-                }
+                FLVaziaLinhas(pListaLinha);
+                LIsereLinhas(pListaLinha, contLinha.numero);
             } else{
+                if (VerificaPalavra(pListaPalavra, pt) == 1){
+                    itemPalavra = criaPalavraVazia();
+                    preenchePalavra(itemPalavra, pt);
+                    FLVaziaPalavras(pListaPalavra);
+                    LIserePalavras(pListaPalavra, itemPalavra);
 
+                    FLVaziaLinhas(pListaLinha);
+                    LIsereLinhas(pListaLinha, contLinha.numero);
+                }else{
+                    if (VerificaLinha(pListaLinha, contLinha) == 1){
+                        FLVaziaLinhas(pListaLinha);
+                        LIsereLinhas(pListaLinha, contLinha.numero);
+                    }else{
+                        break;
+                    }
+                }
             }
             pt = strtok(NULL, " ");
         }
-        contLinha++;
+        contLinha.numero = contLinha.numero+1;
     }
 
 

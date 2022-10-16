@@ -28,7 +28,7 @@ typedef struct{
 TListaLetra* CriaDicioVazio(TListaLetra* pLetra);
 int LEhDicioVazio(TListaLetra* pLetra);
 int VerificaLetra(TListaLetra* pLetra, char letra);
-void InsereLetra(TListaLetra* pLetra, char caractere, int contlinha);
+void InsereLetra(TListaLetra* pLetra, char caractere);
 void ConstroiDicio(TListaLetra* pLetra, TListaPalavra* pListaPalavra);
 void ImprimeDicio(TListaLetra* pLetra);
 void ImprimeDadaLetra(TListaLetra* pLista, char dadaLetra);

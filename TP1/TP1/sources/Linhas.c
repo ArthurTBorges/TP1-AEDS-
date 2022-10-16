@@ -16,7 +16,7 @@ void LIsereLinhas(TListaLinha* pListaLinha, TItemLinha *pItemLinha){
     pListaLinha->ultL->proxLinha = NULL;
 }
 
-int VerificaLinha(TListaLinha* pListaLinha, int atualLinha){
+int VerificaLinha(TListaLinha* pListaLinha, TItemLinha atualLinha){
     TCelulaLinha* pAux;
 
     if(LEhVaziaLinhas(pListaLinha)){
