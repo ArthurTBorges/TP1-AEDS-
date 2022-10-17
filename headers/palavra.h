@@ -9,7 +9,7 @@
 
 
 typedef struct{
-    char *string[50];
+    char string[50];
     ApontaLinha primL;
 }TItemPalavra;
 

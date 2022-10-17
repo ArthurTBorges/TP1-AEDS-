@@ -5,11 +5,12 @@
 #include "../headers/palavra.h"
 
 TItemPalavra* criaPalavraVazia(){
-    TItemPalavra *pPalavra = NULL;
+    TItemPalavra* pPalavra;
+    pPalavra = (TItemPalavra*) malloc(sizeof (TItemPalavra));
     return pPalavra;
 }
 
-void preenchePalavra(TItemPalavra * palavra, char caracteres[50]){
+void preenchePalavra(TItemPalavra* palavra, char caracteres[50]){
     strcpy( palavra->string, caracteres);
 }
 

@@ -33,8 +33,8 @@ typedef struct{
 void CriaDicioVazio(TListaLetra* pLetra);
 int LEhDicioVazio(TListaLetra* pLetra);
 int VerificaLetra(TListaLetra* pLetra, char letra);
-void InsereLetra(TListaLetra* pLetra, char caractere);
-void ConstroiDicio(TListaLetra* pLetra, TListaPalavra* pListaPalavra);
+void InsereLetra(TListaLetra* pLetra, char caractere[1]);
+void ConstroiDicio(TListaLetra* pLetra,TListaPalavra* pPalavra,TListaLinha* pLinha);
 void ImprimeDicio(TListaLetra* pLetra);
 void ImprimeDadaLetra(TListaLetra* pLista, char dadaLetra);
 

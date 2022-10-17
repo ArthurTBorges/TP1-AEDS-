@@ -41,7 +41,7 @@ void LIserePalavras(TListaPalavra* pListaPalavra, TItemPalavra *pItemPalavra);
 int LRetiraPalavras(TListaPalavra* pListaPalavra);
 int LRetiraDadaP(TListaPalavra* pListaPalavra, char dadaPalavra);
 int LEhVaziaPalavras(TListaPalavra* pListaPalavra);
-int VerificaPalavra(TListaPalavra* pListaPalavra, char dadaPalavra);
+int VerificaPalavra(TListaPalavra* pListaPalavra, char dadaPalavra[50]);
 int RetornaContagem(TListaPalavra* pListaPalavra);
 void LImprimePalavrasAndLinhas(TListaPalavra* pListaPalavra, TListaLinha* pListaLinha);
 

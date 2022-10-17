@@ -15,7 +15,7 @@ int main(){
 
         switch (menu){
             case 1:
-                ConstroiDicio(&pLetra, pPalavra);
+                ConstroiDicio(&pLetra);
             case 2:
                 ImprimeDicio(&pLetra);
             default:

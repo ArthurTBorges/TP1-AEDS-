@@ -25,8 +25,8 @@ typedef struct{
 
 void FLVaziaLinhas(TListaLinha* pListaLinha);
 int LEhVaziaLinhas(TListaLinha* pListaLinha);
-void LIsereLinhas(TListaLinha* pListaLinha, TItemLinha *pItemLinha);
-int VerificaLinha(TListaLinha* pListaLinha, TItemLinha atualLinha);
+void LIsereLinhas(TListaLinha* pListaLinha, TItemLinha* pItemLinha);
+int VerificaLinha(TListaLinha* pListaLinha, int atualLinha);
 void LImprimeLinhas(TListaLinha* pListaLinha);
 
 

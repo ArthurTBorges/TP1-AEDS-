@@ -46,7 +46,7 @@ int LRetiraDadaP(TListaPalavra* pListaPalavra, char dadaPalavra){
     }
     pAux = pListaPalavra->primP->proxPalavra;
     while(pAux != NULL){
-        if(strcmp(pAux->proxPalavra->Item.string, &dadaPalavra) == 0){
+        if(strcmp((const char *) pAux->proxPalavra->Item.string, &dadaPalavra) == 0){
             if(pAux->proxPalavra != NULL){
                 pAux2.proxPalavra = pAux->proxPalavra;
                 pAux->proxPalavra = pAux->proxPalavra->proxPalavra;
@@ -76,7 +76,7 @@ int VerificaPalavra(TListaPalavra* pListaPalavra, char dadaPalavra){
     }
     pAux = pListaPalavra->primP->proxPalavra;
     while(pAux != NULL){
-        if(strcmp(pAux->Item.string, &dadaPalavra) == 0){
+        if(strcmp((const char *) pAux->Item.string, &dadaPalavra) == 0){
             return 0;
         }
 
